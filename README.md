@@ -1,6 +1,6 @@
 # React Elementis
 
-A development are kit for React components.
+A development sandbox for custom-made React components.
 
 ## Features
 
