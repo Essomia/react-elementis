@@ -5,6 +5,8 @@ A development sandbox for custom-made React components.
 ## Features
 
 - Use `vite` as a bundler.
+- Use `eslint` as javascript linter.
+- Use `storybook` to develop React component in isolation.
 
 ## Installation
 
@@ -14,4 +16,5 @@ A development sandbox for custom-made React components.
    cd react-elementis
    npm install
    npm run dev
+   npm run storybook
    ```
