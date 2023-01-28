@@ -15,6 +15,14 @@ A development sandbox for custom-made React components.
    ```shell
    cd react-elementis
    npm install
+   ```
+3. Dev apps:
+   ```shell
    npm run dev
-   npm run storybook
+   npm run storybook:dev
+   ```
+4. Build apps:
+   ```shell
+   npm run build
+   npm run storybook:build
    ```

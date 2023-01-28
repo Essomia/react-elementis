@@ -1,12 +1,13 @@
 {
   "extends": ["airbnb", "airbnb/hooks"],
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-one-expression-per-line": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "react/function-component-definition": [
-      2,
+      "error",
       { "namedComponents": "arrow-function" }
     ],
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off"
   }
 }
