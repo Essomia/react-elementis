@@ -1,0 +1,42 @@
+import { Meta } from '@storybook/addon-docs';
+
+import Logo from '../../public/logo.svg';
+
+<Meta title="Introduction" />
+
+<style>
+  {`
+    .item-logo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .item-logo img {
+        height: 150px;
+        width: 150px;
+    }
+    .item-logo .title {
+        margin: .5em 0 3rem;
+        color: #233e63;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .item-logo .color {
+        color: #d54e3c;
+        font-size: inherit;
+        font-weight: 500;
+    }
+  `}
+</style>
+
+<div className="item-logo">
+  <img src={Logo} alt="Logo React Elementis" />
+  <div class="title">
+    React <span class="color">Elementis</span>
+  </div>
+</div>
+
+# Welcome to React Elementis
+
+This storybook setup helps you build UI components in isolation from your app's business logic, data, and context.
+See it as a development sandbox for custom-made React components.
