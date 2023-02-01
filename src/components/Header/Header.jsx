@@ -5,9 +5,7 @@ import { shape, func } from 'prop-types';
 import Button from '../Button/Button';
 import './header.css';
 
-const Header = ({
-  user, onLogin, onLogout, onCreateAccount,
-}) => (
+const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header>
     <div className="wrapper">
       <div>
@@ -33,6 +31,9 @@ const Header = ({
           </g>
         </svg>
         <h1>Acme</h1>
+      </div>
+      <div>
+        <Button size="small" label="Products" />
       </div>
       <div>
         {user ? (
