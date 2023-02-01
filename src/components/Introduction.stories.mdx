@@ -1,6 +1,7 @@
 import { Meta } from '@storybook/addon-docs';
 
 import Logo from '../../public/logo.svg';
+import ViewportsIcon from '../../public/viewports.svg';
 
 <Meta title="Introduction" />
 
@@ -26,6 +27,26 @@ import Logo from '../../public/logo.svg';
         font-size: inherit;
         font-weight: 500;
     }
+
+    .tip-wrapper {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .tip {
+      display: inline-block;
+      border-radius: 1em;
+      font-size: 11px;
+      line-height: 12px;
+      font-weight: 700;
+      background: #e7fdd8;
+      color: #66bf3c;
+      padding: 4px 12px;
+      margin-right: 10px;
+      vertical-align: top;
+    }
   `}
 </style>
 
@@ -40,3 +61,18 @@ import Logo from '../../public/logo.svg';
 
 This storybook setup helps you build UI components in isolation from your app's business logic, data, and context.
 See it as a development sandbox for custom-made React components.
+
+## Main approaches
+
+- Build UIs with a <a href="https://componentdriven.org" target="_blank" rel="noopener noreferrer"><strong>component-driven</strong></a> process starting with atomic components and ending with pages.
+- Use mock data to render pages. This makes it easy to build and review page states without needing to navigate to them in your app.
+
+## Tips
+
+<div className="tip-wrapper">
+  <span className="tip">Tip</span>
+  Adjust the width of the canvas with the <img
+    src={ViewportsIcon}
+    alt="icon viewports"
+  /> (viewports addon in the toolbar)
+</div>
