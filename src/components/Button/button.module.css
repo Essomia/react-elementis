@@ -8,16 +8,27 @@
   cursor: pointer;
 }
 
+.button:focus,
+.button:hover {
+  box-shadow: #1e40fd 0px 0px 0px 2px inset;
+}
+
+/* MODE */
+
 .buttonPrimary {
+  composes: button;
   background-color: #1ea7fd;
   color: white;
 }
 
 .buttonSecondary {
+  composes: button;
   background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  border: 1px solid rgb(210, 210, 210);
   color: #333;
 }
+
+/* VARIANTS */
 
 .buttonSmall {
   font-size: 12px;

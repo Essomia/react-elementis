@@ -2,7 +2,7 @@ import React from 'react';
 
 import { bool, string, oneOf, func } from 'prop-types';
 
-import classes from './button.module.css';
+import classes from './Button.module.css';
 
 const Button = ({ backgroundColor, label, primary, size, ...props }) => {
   const mode = primary ? classes.buttonPrimary : classes.buttonSecondary;
@@ -21,7 +21,7 @@ const Button = ({ backgroundColor, label, primary, size, ...props }) => {
   return (
     <button
       type="button"
-      className={[classes.button, variant(), mode].join(' ')}
+      className={[variant(), mode].join(' ')}
       style={backgroundColor && { backgroundColor }}
       {...props}
     >

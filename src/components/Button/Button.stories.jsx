@@ -1,10 +1,14 @@
 import React from 'react';
+import { within, userEvent } from '@storybook/testing-library';
 
 import Button from './Button';
 
 export default {
   title: 'UI/Button',
   component: Button,
+  parameters: {
+    layout: 'fullscreen',
+  },
   argTypes: {
     backgroundColor: {
       control: 'color',
@@ -25,4 +29,17 @@ Primary.args = {
   label: 'Button Primary',
   primary: true,
   size: 'large',
+};
+
+export const Clicked = Template.bind({});
+Clicked.args = {
+  label: 'Login',
+  primary: true,
+};
+
+Clicked.play = async ({ canvasElement }) => {
+  const canvas = within(canvasElement);
+  const loginButton = await canvas.getByRole('button', { name: /Login/i });
+
+  await userEvent.click(loginButton);
 };
