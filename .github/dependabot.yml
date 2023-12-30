@@ -3,6 +3,13 @@ version: 2
 updates:
   - package-ecosystem: 'npm'
     directory: '/'
+    # Check for updates to GitHub Actions every week
     schedule:
-      # Check for updates to GitHub Actions every week
       interval: 'weekly'
+    # Create a group of dependencies to be updated together in one pull request
+    groups:
+      # Specify a name for the group, which will be used in pull request titles
+      production-dependencies:
+        dependency-type: 'production'
+      development-dependencies:
+        dependency-type: 'development'
