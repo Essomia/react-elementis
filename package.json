@@ -14,10 +14,10 @@
   },
   "dependencies": {
     "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^7.0.18",
+    "@storybook/addon-essentials": "^7.6.6",
     "@storybook/addon-interactions": "^6.5.16",
     "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-vite": "^7.0.18",
+    "@storybook/builder-vite": "^7.6.6",
     "@storybook/react": "^7.0.18",
     "@storybook/testing-library": "^0.0.13",
     "prop-types": "^15.8.1",
